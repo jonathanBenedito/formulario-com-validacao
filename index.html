@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com validação</title>
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/variaveis.css">
+    <link rel="stylesheet" href="src/css/estilo.css">
+    <link rel="stylesheet" href="src/css/responsivo.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <section class="duvida">
+            <h1>Ficou com dúvida?<br>Nos mande uma mensagem!</h1>
+            <p>
+                caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e
+                entraremos em contato em menos de 24h.
+            </p>
+        </section>
+
+        <section class="formulario">
+            <form method="post" onsubmit="validarFormulario(event);">
+                <div class="campo">
+                    <input type="text" name="nome" id="nome" placeholder="Nome completo *">
+                    <small class="mensagem-feedback">campo obrigatório</small>
+                </div>
+
+                <div class="campo">
+                    <input type="email" name="email" id="email" placeholder="Email *">
+                    <small class="mensagem-feedback">campo obrigatório</small>
+                </div>
+
+                <div class="campo">
+                    <input type="text" name="telefone" id="telefone" placeholder="Telefone *">
+                    <small class="mensagem-feedback">campo obrigatório</small>
+                </div>
+
+                <div class="campo campo-mensagem">
+                    <textarea name="mensagem" id="mensagem" placeholder="Mensagem *"></textarea>
+                    <small class="mensagem-feedback">campo obrigatório</small>
+                </div>
+
+                <p class="campos-obrigatorios">*campos obrigatórios</p>
+
+                <input class="botao-enviar" type="submit" name="enviar" value="Enviar">
+            </form>
+        </section>
+    </main>
+
+    <script src="src/js/index.js"></script>
+</body>
+
+</html>

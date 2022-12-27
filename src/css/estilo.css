@@ -1,0 +1,119 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+small {
+    font-size: 1rem;
+}
+
+input, textarea {
+    border: 1px solid var(--cor-borda-campo);
+    border-radius: 0.5rem;
+    padding: 0.8rem;
+    display: block;
+}
+
+input::placeholder, textarea::placeholder {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--cor-fonte-placeholder-campo);
+}
+
+main {
+    background: url('../img/fundo.png') repeat-x;
+    background-size: contain;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 300px 340px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 5rem;
+    grid-gap: 10rem;
+}
+
+/* DUVIDAS */
+
+.duvida {
+    color: var(--cor-fonte-texto);
+}
+
+.duvida h1 {
+    text-transform: uppercase;
+    margin-bottom: 1.1rem;
+}
+
+/* DUVIDAS */
+
+/* FORMULARIO */
+
+.formulario {
+    background-color: var(--cor-fundo-cartao-formulario);
+    padding: 2rem;
+}
+
+.formulario form .campo {
+    height: 50px;
+}
+
+.formulario form .campo-mensagem {
+    height: 120px;
+}
+
+.formulario form .campo input, 
+.formulario form .campo textarea,
+.formulario form .botao-enviar {
+    width: 100%;
+}
+
+.formulario form .campo .mensagem-feedback {
+    display: none;
+}
+
+.formulario form .campo.invalido .mensagem-feedback {
+    display: block;
+    color: var(--cor-campo-invalido);
+}
+
+.formulario form .campo.invalido input,
+.formulario form .campo.invalido textarea {
+    border-color: var(--cor-campo-invalido);
+}
+
+.formulario form .campo.valido input,
+.formulario form .campo.valido textarea {
+    border-color: var(--cor-borda-campo-valido);
+}
+
+.formulario form .campo textarea {
+    height: 100px;
+}
+
+.formulario form .campos-obrigatorios {
+    margin-bottom: 1.1rem;
+}
+
+.formulario form .botao-enviar {
+    background-color: var(--cor-fundo-botao-enviar);
+    border: none;
+    color: var(--cor-fonte-texto);
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 1.2rem 0;
+    cursor: pointer;
+}
+
+/* FORMULARIO */

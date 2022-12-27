@@ -1,0 +1,12 @@
+:root {
+    --cor-fonte-placeholder-campo: rgba(168, 168, 168, 1);
+    --cor-campo-invalido: #F52E2E;
+    --cor-borda-campo-valido: rgba(0, 194, 43, 1);
+    --cor-borda-campo: black;
+    --cor-fundo-botao-enviar: #3CCC87;
+    
+    --cor-fundo-cartao-formulario: white;
+    
+    --cor-fonte-texto: white;
+    --cor-fonte-texto-cartao: black;
+}

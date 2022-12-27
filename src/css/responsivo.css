@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 300px;
+        grid-gap: 3rem;
+    }
+
+    .duvida {
+        text-align: center;
+        align-self: flex-end;
+    }
+
+    .formulario {
+        align-self: flex-start;
+    }
+}
