@@ -5,6 +5,7 @@ function validarFormulario(event) {
         const campo = event.target[i];
 
         if (!campo.value) {
+            campo.parentElement.classList.remove('valido');
             campo.parentElement.classList.add('invalido');
         } else {
             campo.parentElement.classList.remove('invalido');
